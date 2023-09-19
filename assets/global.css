@@ -5,8 +5,9 @@
 }
 
 main {
-  width: 90vw;
+  width: 95vw;
   max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: yellow;
 }
