@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAJIQ Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Kanit', sans-serif;
+      box-sizing: border-box; 
+    }
+    body {
+      background-color: black;
+    }
+    #vbanner {
+      position: absolute;
+      top:0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+    }
+    main {
+      position: relative;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    section {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      padding: 10px 15vw;
+      background-color: white;
+    }
+
+    footer {
+      position: relative;
+      width: 100%;
+      height: 30vh;
+      padding: 10px 15vw;
+      background-color: black;
+    }
+    #opening :not(#vbanner) {
+      position: absolute;
+      z-index: 1;
+    }
+    #opening h1 {
+      top: 30%; width: 70%; left: 15%;
+      text-align: center;
+      color: white;
+      font-size: 4em;
+      line-height: 1em;
+    }
+
+    #preopen {
+      position: fixed;
+      top:0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    #preopen img {
+      position: absolute;
+      top: calc(50% - 150px);
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+    }
+    continue {
+      position: absolute;
+    top: 60%;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    }
+
+    #sec2 {
+      background-color: #e5ba1f;
+    }
+  </style>
+</head>
+<body>
+  <div id="preopen" onclick="pvb()"><img src="majiq-logo.png"><continue>ENTER SITE</continue></div>
+  <main>
+    <section id="opening" style="overflow-y: hidden;" >
+      <video id="vbanner" loop>
+        <source src="banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h1 style="">Introducing a new<br>virtual surfing system<br>for the metaverse.</h1>
+    </section>
+
+    <section id="sec2">
+      <h2>Meticulously designed to mirror the real-life dynamics of surfing, our system offers wave physics, board mechanics, and real-time environmental interactions, ensuring that each ride on the virtual waves closely resembles the genuine thrills of surfing in the physical world.</h2>
+    </section>
+
+    <section id="sec3">
+      <h2>features here: <br>
+        1. feel the wave push even different sim will give different feeling, <br>
+        2. pivot drop ins and no need to press forward to 'gas', ride the wave instead of throttle, <br>
+        3. realistic movements, carve, snaps, even roundhouse cutback, <br>
+        4. complete quiver collection with different physics and different challenge, we even have surfskate</h2>
+    </section>
+
+    <section id="sec4">
+      <h2>Whether you're a seasoned surfer looking to hone your skills or a newbie seeking to catch your first wave, our platform provides an unparalleled experience that blurs the lines between the digital realm and reality. Ride the waves with us and experience the next evolution of virtual surfing!</h2>
+      <h4>Link to teeruk https://marketplace.secondlife.com/stores/223231</h4>
+    </section>
+
+    <footer>
+
+    </footer>
+  </main>
+</body>
+</html>
+<script>
+  function pvb() {
+    var v = document.getElementById('vbanner');
+    v.play();
+    document.getElementById('preopen').style.display = "none";
+  }
+</script>
