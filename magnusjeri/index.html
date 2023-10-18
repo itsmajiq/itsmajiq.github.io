@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <title>I love you, Teerak</title>
+  <style>
+    * {  margin:0; padding: 0; font-family: 'Berkshire Swash', serif; font-weight: 400; background-size: cover;}
+    body {
+    background-image: url(paralax.png);
+    /* background-size: 100% auto; */
+    background-position-y: 0;
+    transition: background-position-y 5s;
+    background-repeat: repeat-y;
+}
+    .grid { margin: 0 auto; }
+    .notext {
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+    .notext:hover {
+      transform: scale(95%);
+      /* box-shadow: 0 0 30px black; */
+      border-radius: 50%;
+    }
+    .grid p { padding: 50px; font-size: 1.6em; line-height: 1.45em;}
+    .grid-sizer, .grid-item { width: 180px;}
+    img {object-fit: cover;
+  width: 100%;
+  height: 100%;}
+    .grid-item--width2 { width: 540px;}
+    .grid-item--width3 { width: 360px;}
+    .grid-item--width4 { width: 720px;}
+    @media (max-width: 540px) {
+      p { padding-left: 10px; padding-right: 10px;}
+      .grid-item--width2, .grid-item--width4 { width: 360px;} 
+      .grid-item--width3 {width: 180px;}
+    }
+
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+      background-color: rgba(0,0,0,0.95);
+      filter: grayscale(100%);
+      background-image: url('blur.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+      transition: opacity 1s;
+    }
+
+    p:first-letter {
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+
+p:hover {
+  /* color: rgba(252, 85, 182, 0.836) */
+}
+  </style>
+</head>
+<body onload="offload()">
+  <div id="loader"><h1 style="font-size: 2em; text-align: center; padding-top:45vh; color: black">Please wait dear, its loading :)</h1></div>
+
+  <h1 id="dear" style="font-size: 3.6em; text-align: center; padding: 20% 0;">Dear Chanita,</h1>
+  <div id="there" class="grid">
+    <div class="notext grid-sizer"></div>
+    <div class="notext grid-item--width3"><img src="img/01.jpg" /></div>
+    <div class="notext grid-item"><img src="img/02.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>As I sit down to code this letter, a rush of memories floods my mind, reminding me of all the moments we've shared. The journey we've embarked on together, despite the physical miles between us, has been nothing short of extraordinary.</p>
+    </div>
+    <div class="notext grid-item--width2"><img src="img/03.jpg" /></div>
+    
+    
+    <div class="notext grid-item--width2"><iframe style="width: 100%; height: 360px;" src="https://www.youtube.com/embed/Zix9Ndmz4zE?si=Pkcs45fcZZQnV2NR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div class="notext grid-item"><img src="img/05.jpg" /></div>
+    <div class="notext grid-item"><img src="img/06.jpg" /></div>
+    <div class="notext grid-item"><img src="img/04.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>There have been countless times when I found myself missing you so deeply that words failed to describe the emptiness. I know that our relationship is unlike most; it has its own complexities and uniqueness.</p>
+    </div>
+    <div class="notext grid-item"><img src="img/07.jpg" /></div>
+    
+    <div class="notext grid-item--width2"><img src="img/09.jpg" /></div>
+    <div class="notext grid-item"><img src="img/10.jpg" /></div>
+    <div class="notext grid-item"><img src="img/11.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>We live in two worlds: one where you're with your real-life family, and I may never get the chance to hold you close, to feel the warmth of your embrace. But I want you to know, that even in the face of these challenges, I believe with all my heart that what we share is genuine and profound.</p>
+    </div>
+    <div class="notext grid-item"><img src="img/12.jpg" /></div>
+    <div class="notext grid-item"><img src="img/13.jpg" /></div>
+    <div class="notext grid-item"><img src="img/14.jpg" /></div>
+    
+    <!-- <div class="notext grid-item"><img src="img/15.jpg" /></div> -->
+    <!-- <div class="notext grid-item"><img src="img/16.jpg" /></div> -->
+    <div class="notext grid-item"><img src="img/17.jpg" /></div>
+    <div class="notext grid-item--width3"><img src="img/18.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>You are the first woman I could really love beyond both world. It's with you that I've felt a real connection, deeper than any I've ever known. I just want you to know that this isn't just a virtual thing; it's genuine love I feel for you.</p>
+    </div>
+    <div class="notext grid-item"><img src="img/19.jpg" /></div>
+    <div class="notext grid-item"><img src="img/20.jpg" /></div>
+    <div  class="notext grid-item--width3"><img src="img/21.jpg" /></div>
+    <div class="notext grid-item--width2"><img src="img/22.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>Our love, my love, is a testament to the idea that feelings can transcend screens, borders, and realities. Every moment we've shared, every laugh, every tear, reaffirms my belief that our love is genuine, steadfast, and true.</p>
+    </div>
+    <div class="notext grid-item"><img src="img/23.jpg" /></div>
+    <div class="notext grid-item--width2"><img src="img/24.jpg" /></div>
+    <div class="notext grid-item--width2"><img src="img/25.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>Every day, whether in the vibrant world of Second Life or in the quiet moments of my reality, I send up a silent prayer for you. I wish for your happiness, your contentment. I yearn for you to feel cherished, loved, and enveloped in warmth, both in your virtual existence and your day-to-day life.</p>
+    </div>
+    <div class="notext grid-item"><img src="img/27.jpg" /></div>
+    <div class="notext grid-item"><img src="img/28.jpg" /></div>
+    <div class="notext grid-item--width2"><iframe style="width: 100%; height: 360px;" src="https://www.youtube.com/embed/aWb7Ns_FXnw?si=zQUzB9umM7pBy_-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div class="notext grid-item--width3"><img src="img/29.jpg" /></div>
+    
+    <div class="notext grid-item"><img src="img/30.jpg" /></div>
+    <div class="notext grid-item"><img src="img/31.jpg" /></div>
+    
+    <div class="notext grid-item"><img src="img/32.jpg" /></div>
+    <div class="notext grid-item"><img src="img/35.jpg" /></div>
+    <div class="notext grid-item"><img src="img/08.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>The photos you've sent me over the years aren't just images; they are fragments of our shared journey. Each one carries a story, an emotion, a memory. And I cherish them all, holding them close to my heart, as they serve as reminders of our bond.</p>
+    </div>
+    <div  class="notext grid-item--width3"><img src="img/33.jpg" /></div>
+    
+    <div class="notext grid-item"><img src="img/34.jpg" /></div>
+    
+    <div class="notext grid-item"><img src="img/36.jpg" /></div>
+    
+    <div class="notext grid-item--width3"><img src="img/40.jpg" /></div>
+    
+    <div class="notext grid-item"><img src="img/37.jpg" /></div>
+    <div class="grid-item--width4">
+      <p>I want to be there for you, to love you with every fiber of my being, in any way I can. Our relationship, unique and special, has room to blossom, and I want to nurture it, to grow with you, strengthening our bond with each passing day.</p>
+    </div>
+    
+    <div class="notext grid-item"><img src="img/38.jpg" /></div>
+    <div class="notext grid-item"><img src="img/39.jpg" /></div>
+    <div class="notext grid-item--width4"><img src="img/26.jpg" /></div>
+    <div class="notext grid-item--width2"><iframe style="width: 100%; height: 360px;" src="https://www.youtube.com/embed/ROxR8139b5E?si=9VShE5lsCLke8mKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+    <div class="grid-item--width4">
+      <p>As we mark another year of our journey together, I want to express my gratitude. Thank you for standing by my side, for weaving this beautiful tapestry of memories with me. I don't wanna say happy anniversary, because I'm always happy to be with you everyday, day by day, not just within a year :) I wanna enjoy our life now and who knows what in our future.. And I'm glad I finally be with you..</p>
+    </div>
+    
+    
+  </div>
+  <h1 style="font-size: 3.6em; text-align: center; padding: 200px 0;">From the deepest corners of my heart,<br><br><br><br><br><br>I love you, Chanita.<br><br>Always..</h1>
+</body>
+</html>
+<script>
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  itemSelector: '.grid-item, .grid-item--width2, .grid-item--width3, .grid-item--width4',
+  // columnWidth: 180,
+  columnWidth: '.grid-sizer',
+// itemSelector: '.grid-item',
+  isFitWidth: true
+});
+
+function offload() {
+  var x = document.getElementById('loader');
+  x.style.opacity = '0';
+  setTimeout(function(){
+    x.style.display = 'none';
+  }, 1000);
+}
+
+
+
+window.onscroll = function() {
+  var parscroll = window.scrollY*-0.5;
+  document.body.style.backgroundPosition  = '0 ' + parscroll + 'px';
+};
+
+</script>
